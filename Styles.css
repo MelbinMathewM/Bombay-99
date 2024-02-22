@@ -17,6 +17,9 @@ body{
 {
     position: absolute;
     right: 0%;
+    background: #0a0b27;
+    transition: all 6s;
+    backface-visibility: hidden;
 }
 .nav-link
 {
@@ -27,7 +30,12 @@ body{
 }
 #q1,#q2,#q3,#q4
 {
-    padding-right: 30px;
+    margin-left: 10px;
+}
+.navbar-toggler-icon{
+    position: absolute;
+    right:40px;
+    color: white;
 }
 
 .btn
@@ -45,6 +53,22 @@ body{
 .btn:hover{
     color: red;
     transition: 1s;
+}
+.navbar-nav{
+    width: 100%;
+    align-self: start;
+}
+@media screen and (max-width:992px){
+    .navbar-nav{
+        width: 100%;
+        padding-right: 200px;
+    }
+}
+@media screen and (max-width:300px){
+    .navbar-nav{
+        width: 100%;
+        padding-right: 100px;
+    }
 }
 .dropdown-menu
 {
@@ -100,7 +124,7 @@ body{
 {
     background: rgb(250, 167, 74);
     z-index: -1;
-    height: 944px;
+
     position: relative;
 }
 #img4{
@@ -114,6 +138,14 @@ body{
 {
     #img4{
         margin-top: 280px;
+        margin-left: 35%;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    #img4{
+        margin-top: 50px;
+        margin-bottom: 50px;
         margin-left: 35%;
     }
 }
@@ -132,13 +164,23 @@ body{
     align-content: center;
     
 }
-@media only screen and (max-width: 720px)
+
+@media only screen and (max-width: 800px)
+{
+    .p1{
+        font-size:30px;
+        position: absolute;
+        left:30%;
+        top:360px;
+    }
+}
+@media only screen and (max-width: 500px)
 {
     .p1{
         font-size: 25px;
         position: absolute;
         left:25%;
-        top:320px;
+        top:100px;
     }
 }
 #sec22{
@@ -166,10 +208,6 @@ footer{
     width:auto;
     padding-left: 5%;
 
-}
-.container-fluid
-{
-    
 }
 .a3
 {
